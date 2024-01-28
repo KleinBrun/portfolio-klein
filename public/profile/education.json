@@ -1,0 +1,13 @@
+{
+    "education":[
+        {
+            "title": "2017-2021",
+            "cardTitle": "Ingeniero de Sistemas",
+            "cardSubtitle":"Corporación universitaria Remington",
+            "cardDetailedText": "Profesional",
+            "icon" : {
+                "src": "images/education/ingsis.png"
+            }
+        }
+    ]
+}
