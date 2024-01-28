@@ -1,10 +1,9 @@
 {
     "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
-    "skills": [{
-     
+    "skills": [
+        {
             "title": "Languages & Databases",
-            "items" : [
-    
+            "items": [
                 {
                     "icon": "images/skills/php.png",
                     "title": "PHP"
@@ -45,10 +44,11 @@
                     "icon": "images/skills/postgresql.png",
                     "title": "PostgreSQL"
                 }
-        ]},
+            ]
+        },
         {
             "title": "Frameworks & Technologies",
-            "items" : [
+            "items": [
                 {
                     "icon": "images/skills/react.png",
                     "title": "React"
@@ -80,7 +80,7 @@
             ]
         },
         {
-            "title" : "Tools & Platforms",
+            "title": "Tools & Platforms",
             "items": [
                 {
                     "icon": "images/skills/vscode.webp",
@@ -95,5 +95,6 @@
                     "title": "NetBeans"
                 }
             ]
-    }
-]}
+        }
+    ]
+}
