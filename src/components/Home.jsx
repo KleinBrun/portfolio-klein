@@ -6,51 +6,57 @@ import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
-  nameStyle: {
-    fontSize: '5em',
-  },
-  inlineChild: {
-    display: 'inline-block',
-  },
-  mainContainer: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+	nameStyle: {
+		fontSize: '5em',
+	},
+	inlineChild: {
+		display: 'inline-block',
+	},
+	mainContainer: {
+		height: '100%',
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
 };
 
 function Home() {
-  const [data, setData] = useState(null);
+	const [data, setData] = useState({
+		name: 'KLEIN BRUN',
+		roles: ['a Developer', 'a Full Stack'],
+	});
 
-  useEffect(() => {
-    fetch(endpoints.home, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
-  }, []);
+	useEffect(() => {
+		// console.log(home2);
+		// fetch(endpoints.home, {
+		//   method: 'GET',
+		// })
+		//   .then((res) => res.json())
+		//   .then((res) => setData(res))
+		//   .catch((err) => err);
+	}, []);
 
-  return data ? (
-    <Fade>
-      <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
-        <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-          <Typewriter
-            options={{
-              loop: true,
-              autoStart: true,
-              strings: data?.roles,
-            }}
-          />
-        </div>
-        <Social />
-      </div>
-    </Fade>
-  ) : <FallbackSpinner />;
+	return data ? (
+		<Fade>
+			<div style={styles.mainContainer}>
+				<h1 style={styles.nameStyle}>{data?.name}</h1>
+				<div style={{ flexDirection: 'row' }}>
+					<h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+					<Typewriter
+						options={{
+							loop: true,
+							autoStart: true,
+							strings: data?.roles,
+						}}
+					/>
+				</div>
+				<Social />
+			</div>
+		</Fade>
+	) : (
+		<FallbackSpinner />
+	);
 }
 
 export default Home;

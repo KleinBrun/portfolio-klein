@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage":"https://KleinBrun.github.io/portfolio-klein/build",
-  "proxy": "https://kleinbrun.github.io/profile/about.json",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -44,15 +43,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "react-error-overlay": "6.0.9"
   },
   "resolutions": {
     "react-error-overlay": "6.0.9"
