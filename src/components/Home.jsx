@@ -22,19 +22,16 @@ const styles = {
 };
 
 function Home() {
-	const [data, setData] = useState({
-		name: 'KLEIN BRUN',
-		roles: ['a Developer', 'a Full Stack'],
-	});
+	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		// console.log(home2);
-		// fetch(endpoints.home, {
-		//   method: 'GET',
-		// })
-		//   .then((res) => res.json())
-		//   .then((res) => setData(res))
-		//   .catch((err) => err);
+		console.log(home2);
+		fetch(endpoints.home, {
+			method: 'GET',
+		})
+			.then((res) => res.json())
+			.then((res) => setData(res))
+			.catch((err) => err);
 	}, []);
 
 	return data ? (

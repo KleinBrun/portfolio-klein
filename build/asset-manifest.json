@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-klein/build/static/css/main.c4daa1c3.css",
-    "main.js": "/portfolio-klein/build/static/js/main.f46ba6d5.js",
+    "main.js": "/portfolio-klein/build/static/js/main.f98d61f3.js",
     "static/js/411.b365eecf.chunk.js": "/portfolio-klein/build/static/js/411.b365eecf.chunk.js",
     "static/css/449.1709ef3a.chunk.css": "/portfolio-klein/build/static/css/449.1709ef3a.chunk.css",
     "static/js/449.ee55a87e.chunk.js": "/portfolio-klein/build/static/js/449.ee55a87e.chunk.js",
@@ -16,7 +16,7 @@
     "static/js/64.ab405ee4.chunk.js": "/portfolio-klein/build/static/js/64.ab405ee4.chunk.js",
     "index.html": "/portfolio-klein/build/index.html",
     "main.c4daa1c3.css.map": "/portfolio-klein/build/static/css/main.c4daa1c3.css.map",
-    "main.f46ba6d5.js.map": "/portfolio-klein/build/static/js/main.f46ba6d5.js.map",
+    "main.f98d61f3.js.map": "/portfolio-klein/build/static/js/main.f98d61f3.js.map",
     "411.b365eecf.chunk.js.map": "/portfolio-klein/build/static/js/411.b365eecf.chunk.js.map",
     "449.1709ef3a.chunk.css.map": "/portfolio-klein/build/static/css/449.1709ef3a.chunk.css.map",
     "449.ee55a87e.chunk.js.map": "/portfolio-klein/build/static/js/449.ee55a87e.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.c4daa1c3.css",
-    "static/js/main.f46ba6d5.js"
+    "static/js/main.f98d61f3.js"
   ]
 }
