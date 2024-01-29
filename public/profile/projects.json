@@ -1,7 +1,7 @@
 {
-    "projects" : [
+    "projects": [
         {
-            "image" : "images/projects/lobby.png",
+            "image": "images/projects/lobby.png",
             "title": "Hoteleria",
             "bodyText": "- Sitio web de gestion y reserva de hoteles\n- Crud de contendio hotelera y reservas en BD",
             "links": [
@@ -10,7 +10,7 @@
                     "href": "https://github.com/KleinBrun/Lobby"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "Vue",
                 "Laravel",
                 "MySql"
@@ -25,7 +25,7 @@
                     "href": "https://github.com/KleinBrun/proyectoblog"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "React",
                 "PHP",
                 "MySql"
@@ -34,12 +34,24 @@
         {
             "title": "Ordenes De Servicio",
             "bodyText": "- Registro de equipos recibidos\n- Factura de recivido  y entregado con infomacion del equipo y el servicio\n- Estado del producto",
-            "links": [
-                
-            ],
-            "tags" : [
+            "links": [],
+            "tags": [
                 "Java",
                 "MySql"
+            ]
+        },
+        {
+            "image": "images/projects/search.png",
+            "bodyText": "- Consulta a Api de gift\n- Hooks",
+            "title": "Buscador de Gifts",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://gif-search-klein.netlify.app/"
+                }
+            ],
+            "tags": [
+                "React"
             ]
         }
     ]

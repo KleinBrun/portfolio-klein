@@ -25,7 +25,6 @@ function Home() {
 	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		console.log(home2);
 		fetch(endpoints.home, {
 			method: 'GET',
 		})
