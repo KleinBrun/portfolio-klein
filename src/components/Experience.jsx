@@ -40,7 +40,7 @@ function Experience(props) {
 			method: 'GET',
 		})
 			.then((res) => res.json())
-			.then((res) => console(res.experiences))
+			.then((res) => setData(res.experiences))
 			.catch((err) => err);
 	}, []);
 
