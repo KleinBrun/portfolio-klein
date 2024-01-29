@@ -12,29 +12,17 @@ import '../css/education.css';
 function Education(props) {
 	const theme = useContext(ThemeContext);
 	const { header } = props;
-	const [data, setData] = useState({
-		education: [
-			{
-				title: '2017-2021',
-				cardTitle: 'Ingeniero de Sistemas',
-				cardSubtitle: 'Corporación universitaria Remington',
-				cardDetailedText: 'Profesional',
-				icon: {
-					src: 'images/education/ingsis.png',
-				},
-			},
-		],
-	});
+	const [data, setData] = useState(null);
 	const [width, setWidth] = useState('50vw');
 	const [mode, setMode] = useState('VERTICAL_ALTERNATING');
 
 	useEffect(() => {
-		// fetch(endpoints.education, {
-		//   method: 'GET',
-		// })
-		//   .then((res) => res.json())
-		//   .then((res) => setData(res))
-		//   .catch((err) => err);
+		fetch(endpoints.education, {
+			method: 'GET',
+		})
+			.then((res) => res.json())
+			.then((res) => setData(res))
+			.catch((err) => err);
 
 		if (window?.innerWidth < 576) {
 			setMode('VERTICAL');

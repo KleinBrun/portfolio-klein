@@ -21,106 +21,7 @@ const styles = {
 
 function Skills(props) {
 	const { header } = props;
-	const [data, setData] = useState({
-		intro: 'I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:',
-		skills: [
-			{
-				title: 'Languages & Databases',
-				items: [
-					{
-						icon: 'images/skills/php.png',
-						title: 'PHP',
-					},
-					{
-						icon: 'images/skills/js.png',
-						title: 'JavaScript',
-					},
-					{
-						icon: 'images/skills/java.png',
-						title: 'Java',
-					},
-					{
-						icon: 'images/skills/csharp.png',
-						title: 'C#',
-					},
-					{
-						icon: 'images/skills/html.png',
-						title: 'HTML',
-					},
-					{
-						icon: 'images/skills/ibm.jpeg',
-						title: 'IBM',
-					},
-					{
-						icon: 'images/skills/sqlserver.png',
-						title: 'SQL Server',
-					},
-					{
-						icon: 'images/skills/mysql.png',
-						title: 'MySql',
-					},
-					{
-						icon: 'images/skills/oracle.png',
-						title: 'Oracle',
-					},
-					{
-						icon: 'images/skills/postgresql.png',
-						title: 'PostgreSQL',
-					},
-				],
-			},
-			{
-				title: 'Frameworks & Technologies',
-				items: [
-					{
-						icon: 'images/skills/react.png',
-						title: 'React',
-					},
-					{
-						icon: 'images/skills/redux.png',
-						title: 'Redux',
-					},
-					{
-						icon: 'images/skills/nodejs.png',
-						title: 'Nodejs',
-					},
-					{
-						icon: 'images/skills/laravel.png',
-						title: 'Laravel',
-					},
-					{
-						icon: 'images/skills/yii2.png',
-						title: 'YII2',
-					},
-					{
-						icon: 'images/skills/springboot.png',
-						title: 'SpringBoot',
-					},
-					{
-						icon: 'images/skills/vue.png',
-						title: 'Vue',
-					},
-				],
-			},
-			{
-				title: 'Tools & Platforms',
-				items: [
-					{
-						icon: 'images/skills/vscode.webp',
-						title: 'VsCode',
-					},
-					{
-						icon: 'images/skills/git.png',
-						title: 'Git',
-					},
-					{
-						icon: 'images/skills/netbeans.png',
-						title: 'NetBeans',
-					},
-				],
-			},
-		],
-	});
+	const [data, setData] = useState(null);
 
 	const renderSkillsIntro = (intro) => (
 		<h4 style={styles.introTextContainer}>
@@ -129,12 +30,12 @@ function Skills(props) {
 	);
 
 	useEffect(() => {
-		// fetch(endpoints.skills, {
-		//   method: 'GET',
-		// })
-		//   .then((res) => res.json())
-		//   .then((res) => setData(res))
-		//   .catch((err) => err);
+		fetch(endpoints.skills, {
+			method: 'GET',
+		})
+			.then((res) => res.json())
+			.then((res) => setData(res))
+			.catch((err) => err);
 	}, []);
 
 	return (

@@ -33,44 +33,15 @@ const styles = {
 function Experience(props) {
 	const theme = useContext(ThemeContext);
 	const { header } = props;
-	const [data, setData] = useState([
-		{
-			title: 'Desarrollador de Sofware',
-			subtitle: 'TECNNOVA JED',
-			workType: 'Full-time',
-			workDescription: [
-				'Creacion de aplicativo de escritorio de Ordenes de Servicio(Java, Sql Server).',
-			],
-			dateText: '02/2020 – 12/2020',
-		},
-		{
-			title: 'Desarrollador WEB',
-			subtitle: 'SYSCOLEGIOS',
-			workType: 'Full-time',
-			workDescription: [
-				'Desarrollo y soporte en sistemas de información web (PHP, SQL, JQUERY, HTML).',
-			],
-			dateText: '02/2020 – 12/2020',
-		},
-		{
-			title: 'Analista de Desarrollo Full Stack',
-			subtitle: 'KONECTA',
-			workType: 'Full-time',
-			workDescription: [
-				'Desarrollo y soporte de aplicativo web de gestión de clientes (Reat, Yii2, Laravel, SQL, Reporting, security, etc.).',
-			],
-			dateText: '03/2021 – Actualmente',
-		},
-	]);
+	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		console.log();
-		// fetch(endpoints.experiences, {
-		//   method: 'GET',
-		// })
-		//   .then((res) => res.json())
-		//   .then((res) => console(res.experiences))
-		//   .catch((err) => err);
+		fetch(endpoints.experiences, {
+			method: 'GET',
+		})
+			.then((res) => res.json())
+			.then((res) => console(res.experiences))
+			.catch((err) => err);
 	}, []);
 
 	return (

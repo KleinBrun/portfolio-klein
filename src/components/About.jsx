@@ -26,21 +26,17 @@ const styles = {
 
 function About(props) {
 	const { header } = props;
-	const [data, setData] = useState({
-		about: '¡Hola! Soy un apasionado ingeniero de sistemas con más de 3.5 años de experiencia, enfocado principalmente en el desarrollo utilizando JavaScript y PHP.\n Además, cuento con sólidos conocimientos en C# y Java. Mi entusiasmo por aprender se refleja en mi dedicación activa al estudio del inglés.\n\nSoy un profesional aplicado y detallista, características que llevo a cada tarea diaria. Mi experiencia se ha centrado en la resolución creativa de problemas y el desarrollo de soluciones eficientes. En mi tiempo libre, disfruto yendo al gimnasio para mantener un equilibrio saludable y soy un apasionado del baloncesto.\nEstoy comprometido con el crecimiento continuo y la excelencia en mi trabajo.\n¡Estoy abierto a nuevas oportunidades que me permitan seguir creciendo laboralmente!',
-
-		imageSource: 'public/images/about/yo.png',
-	});
+	const [data, setData] = useState(null);
 
 	const parseIntro = (text) => <ReactMarkdown children={text} />;
 
 	useEffect(() => {
-		// fetch(endpoints.about, {
-		//   method: 'GET',
-		// })
-		//   .then((res) => res.json())
-		//   .then((res) => setData(res))
-		//   .catch((err) => err);
+		fetch(endpoints.about, {
+			method: 'GET',
+		})
+			.then((res) => res.json())
+			.then((res) => setData(res))
+			.catch((err) => err);
 	}, []);
 
 	return (
