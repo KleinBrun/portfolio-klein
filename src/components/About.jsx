@@ -9,12 +9,13 @@ import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
 	introTextContainer: {
-		margin: 10,
+		margin: 70,
 		flexDirection: 'column',
 		whiteSpace: 'pre-wrap',
 		textAlign: 'left',
 		fontSize: '1.2em',
 		fontWeight: 500,
+
 	},
 	introImageContainer: {
 		margin: 10,
@@ -43,7 +44,7 @@ function About(props) {
 		<>
 			<Header title={header} />
 			<div className='section-content-container'>
-				<Container>
+				<Container >
 					{data ? (
 						<Fade>
 							<Row>
