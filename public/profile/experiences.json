@@ -25,7 +25,16 @@
             "workDescription": [
                 "Desarrollo y soporte de aplicativo web de gestión de clientes (Reat, Yii2, Laravel, SQL, Reporting, security, etc.)."
             ],
-            "dateText": "03/2021 – Actualmente"
+            "dateText": "03/2021 – 07/2024"
+        },
+        {
+            "title": "DESARROLLADOR FULL STACK",
+            "subtitle": "FINAKTIVA",
+            "workType": "Full-time",
+            "workDescription": [
+                "Desarrollo y mantenimiento de plataforma web fintech, optimizando la interacción del cliente con la empresa para hacerla más ágil y eficiente. Uso de tecnologías modernas como Angular, Node.js, TypeScript, SQL, MongoDB, Python y .NET, integradas con servicios AWS (Lambdas, S3)."
+            ],
+            "dateText": "10/2021 – Actualmente"
         }
     ]
 }
