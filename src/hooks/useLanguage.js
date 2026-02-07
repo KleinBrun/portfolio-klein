@@ -6,9 +6,9 @@ function useLanguage() {
   const [language, setLanguageState] = useState(() => {
     try {
       const saved = localStorage.getItem(LANGUAGE_KEY);
-      return saved === 'es' ? 'es' : 'en';
+      return saved === 'en' ? 'en' : 'es';
     } catch {
-      return 'en';
+      return 'es';
     }
   });
 
