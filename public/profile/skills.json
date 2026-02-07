@@ -13,6 +13,10 @@
                     "title": "JavaScript"
                 },
                 {
+                    "icon": "images/skills/typescript.png",
+                    "title": "TypeScript"
+                },
+                {
                     "icon": "images/skills/java.png",
                     "title": "Java"
                 },
@@ -21,12 +25,16 @@
                     "title": "C#"
                 },
                 {
+                    "icon": "images/skills/python.png",
+                    "title": "Python"
+                },
+                {
                     "icon": "images/skills/html.png",
                     "title": "HTML"
                 },
                 {
                     "icon": "images/skills/ibm.jpeg",
-                    "title": "IBM"
+                    "title": "DB2"
                 },
                 {
                     "icon": "images/skills/sqlserver.png",
@@ -34,7 +42,7 @@
                 },
                 {
                     "icon": "images/skills/mysql.png",
-                    "title": "MySql"
+                    "title": "MySQL"
                 },
                 {
                     "icon": "images/skills/oracle.png",
@@ -43,6 +51,10 @@
                 {
                     "icon": "images/skills/postgresql.png",
                     "title": "PostgreSQL"
+                },
+                {
+                    "icon": "images/skills/mongodb.png",
+                    "title": "MongoDB"
                 }
             ]
         },
@@ -54,12 +66,16 @@
                     "title": "React"
                 },
                 {
+                    "icon": "images/skills/angular.png",
+                    "title": "Angular"
+                },
+                {
                     "icon": "images/skills/redux.png",
                     "title": "Redux"
                 },
                 {
                     "icon": "images/skills/nodejs.png",
-                    "title": "Nodejs"
+                    "title": "Node.js"
                 },
                 {
                     "icon": "images/skills/laravel.png",
@@ -67,15 +83,27 @@
                 },
                 {
                     "icon": "images/skills/yii2.png",
-                    "title": "YII2"
+                    "title": "Yii2"
+                },
+                {
+                    "icon": "images/skills/dotnet.png",
+                    "title": ".NET"
                 },
                 {
                     "icon": "images/skills/springboot.png",
-                    "title": "SpringBoot"
+                    "title": "Spring Boot"
                 },
                 {
                     "icon": "images/skills/vue.png",
                     "title": "Vue"
+                },
+                {
+                    "icon": "images/skills/restapi.png",
+                    "title": "REST APIs"
+                },
+                {
+                    "icon": "images/skills/microservices.png",
+                    "title": "Microservices"
                 }
             ]
         },
@@ -84,11 +112,23 @@
             "items": [
                 {
                     "icon": "images/skills/vscode.webp",
-                    "title": "VsCode"
+                    "title": "VS Code"
                 },
                 {
                     "icon": "images/skills/git.png",
                     "title": "Git"
+                },
+                {
+                    "icon": "images/skills/docker.png",
+                    "title": "Docker"
+                },
+                {
+                    "icon": "images/skills/aws.png",
+                    "title": "AWS"
+                },
+                {
+                    "icon": "images/skills/cicd.png",
+                    "title": "CI/CD"
                 },
                 {
                     "icon": "images/skills/netbeans.png",

@@ -16,42 +16,23 @@
                 "MySql"
             ]
         },
-        {
-            "title": "Blog",
-            "bodyText": "- Blog de informacion\n- Con sistema de registro\n- Crud de contendio",
+                {
+            "image": "images/projects/million.png",
+            "title": "Gestion De Propiedades",
+            "bodyText": "- Plataforma completa para la gestión de propiedades inmobiliarias",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/KleinBrun/proyectoblog"
+                    "href": "https://github.com/KleinBrun/Million-Test"
                 }
             ],
             "tags": [
-                "React",
-                "PHP",
-                "MySql"
-            ]
-        },
-        {
-            "title": "Ordenes De Servicio",
-            "bodyText": "- Registro de equipos recibidos\n- Factura de recivido  y entregado con infomacion del equipo y el servicio\n- Estado del producto",
-            "links": [],
-            "tags": [
-                "Java",
-                "MySql"
-            ]
-        },
-        {
-            "image": "images/projects/search.png",
-            "bodyText": "- Consulta a Api de gift\n- Hooks",
-            "title": "Buscador de Gifts",
-            "links": [
-                {
-                    "text": "Live",
-                    "href": "https://gif-search-klein.netlify.app/"
-                }
-            ],
-            "tags": [
-                "React"
+                ".NET 9",
+                "MongoDB",
+                "Next.js 15",
+                "Tailwind CSS",
+                "Zustand",
+                "Docker"
             ]
         }
     ]
