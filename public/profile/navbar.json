@@ -1,39 +1,78 @@
 {
-    "logo" : {
-        "source": "images/logoKlein.png",
-        "height" : 60,
-        "width" : 60
+    "en": {
+        "logo": {
+            "source": "images/logoKlein.png",
+            "height": 60,
+            "width": 60
+        },
+        "sections": [
+            {
+                "title": "Home",
+                "href": "/"
+            },
+            {
+                "title": "About",
+                "href": "/about"
+            },
+            {
+                "title": "Skills",
+                "href": "/skills"
+            },
+            {
+                "title": "Education",
+                "href": "/education"
+            },
+            {
+                "title": "Experience",
+                "href": "/experience"
+            },
+            {
+                "title": "Projects",
+                "href": "/projects"
+            },
+            {
+                "title": "Resume",
+                "href": "https://drive.google.com/file/d/16o9co2zXg51oQ1ASzRerri60LICI_F1S/view?usp=sharing",
+                "type": "link"
+            }
+        ]
     },
-    "sections": [
-        {
-            "title": "Home",
-            "href": "/"
+    "es": {
+        "logo": {
+            "source": "images/logoKlein.png",
+            "height": 60,
+            "width": 60
         },
-        {
-            "title": "About",
-            "href": "/about"
-        },
-        {
-            "title": "Skills",
-            "href": "/skills"
-        },
-        {
-            "title": "Education",
-            "href": "/education"
-        },
-        {
-            "title": "Experience",
-            "href": "/experience"
-        },
-        {
-            "title": "Projects",
-            "href": "/projects"
-        },
-        {
-            "title": "Resume",
-            "href": "https://drive.google.com/file/d/1icDk_44DrBhWwhT4JvpKj07cPQKDtkul/view?usp=sharing",
-            "type": "link"
-        }
-    ]
-
+        "sections": [
+            {
+                "title": "Inicio",
+                "href": "/"
+            },
+            {
+                "title": "Sobre mí",
+                "href": "/about"
+            },
+            {
+                "title": "Habilidades",
+                "href": "/skills"
+            },
+            {
+                "title": "Educación",
+                "href": "/education"
+            },
+            {
+                "title": "Experiencia",
+                "href": "/experience"
+            },
+            {
+                "title": "Proyectos",
+                "href": "/projects"
+            },
+            {
+                "title": "Currículum",
+                "href": "https://drive.google.com/file/d/1mW1CCNMMr46chjLZJYlPTre_5lcpdb8Y/view?usp=sharing",
+                "type": "link"
+            }
+        ]
+    }
 }

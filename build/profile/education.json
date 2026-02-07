@@ -1,13 +1,28 @@
 {
-    "education":[
-        {
-            "title": "2017-2021",
-            "cardTitle": "Ingeniero de Sistemas",
-            "cardSubtitle":"Corporación universitaria Remington",
-            "cardDetailedText": "Profesional",
-            "icon" : {
-                "src": "images/education/ingsis.png"
+    "en": {
+        "education": [
+            {
+                "title": "2017-2021",
+                "cardTitle": "Systems Engineer",
+                "cardSubtitle": "Corporación universitaria Remington",
+                "cardDetailedText": "Professional",
+                "icon": {
+                    "src": "images/education/ingsis.png"
+                }
             }
-        }
-    ]
+        ]
+    },
+    "es": {
+        "education": [
+            {
+                "title": "2017-2021",
+                "cardTitle": "Ingeniero de Sistemas",
+                "cardSubtitle": "Corporación universitaria Remington",
+                "cardDetailedText": "Profesional",
+                "icon": {
+                    "src": "images/education/ingsis.png"
+                }
+            }
+        ]
+    }
 }

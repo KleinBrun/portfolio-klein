@@ -1,7 +1,18 @@
 {
-    "name": "KLEIN BRUN",
-    "roles": [
-        "a Developer",
-        "a Full Stack"
-    ]
+    "en": {
+        "name": "KLEIN BRUN",
+        "imText": "I'm",
+        "roles": [
+            "a Developer",
+            "a Full Stack "
+        ]
+    },
+    "es": {
+        "name": "KLEIN BRUN",
+        "imText": "Soy",
+        "roles": [
+            "un Desarrollador",
+            "un Full Stack"
+        ]
+    }
 }

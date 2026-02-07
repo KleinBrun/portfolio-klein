@@ -1,41 +1,82 @@
 {
-    "experiences": [
-        {
-            "title": "Desarrollador de Sofware",
-            "subtitle": "TECNNOVA JED",
-            "workType": "Full-time",
-            "workDescription": [
-                "Creacion de aplicativo de escritorio de Ordenes de Servicio(Java, Sql Server)."
-            ],
-            "dateText": "02/2020 – 12/2020"
-        },
-        {
-            "title": "Desarrollador WEB",
-            "subtitle": "SYSCOLEGIOS",
-            "workType": "Full-time",
-            "workDescription": [
-                "Desarrollo y soporte en sistemas de información web (PHP, SQL, JQUERY, HTML)."
-            ],
-            "dateText": "02/2020 – 12/2020"
-        },
-        {
-            "title": "Analista de Desarrollo Full Stack",
-            "subtitle": "KONECTA",
-            "workType": "Full-time",
-            "workDescription": [
-                "Desarrollo y soporte de aplicativo web de gestión de clientes (Reat, Yii2, Laravel, SQL, Reporting, security, etc.)."
-            ],
-            "dateText": "03/2021 – 07/2024"
-        },
-        {
-            "title": "Desarrollador Full Stack",
-            "subtitle": "FINAKTIVA",
-            "workType": "Full-time",
-            "workDescription": [
-                "Desarrollo y mantenimiento de plataforma web fintech, optimizando la interacción del cliente con la empresa para hacerla más ágil y eficiente. Uso de tecnologías modernas como Angular, Node.js, TypeScript, SQL, MongoDB, Python y .NET, integradas con servicios AWS (Lambdas, S3)."
-            ],
-            "dateText": "10/2021 – Actualmente"
-        }
-    ]
+    "en": {
+        "experiences": [
+            {
+                "title": "Software Developer",
+                "subtitle": "TECNNOVA JED",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Creation of desktop application for Service Orders (Java, Sql Server)."
+                ],
+                "dateText": "02/2020 – 12/2020"
+            },
+            {
+                "title": "Web Developer",
+                "subtitle": "SYSCOLEGIOS",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Development and support of web information systems (PHP, SQL, JQUERY, HTML)."
+                ],
+                "dateText": "02/2020 – 12/2020"
+            },
+            {
+                "title": "Full Stack Development Analyst",
+                "subtitle": "KONECTA",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Development and support of web application for customer management (React, Yii2, Laravel, SQL, Reporting, security, etc.)."
+                ],
+                "dateText": "03/2021 – 07/2024"
+            },
+            {
+                "title": "Full Stack Developer",
+                "subtitle": "FINAKTIVA",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Development and maintenance of a fintech web platform, optimizing customer interaction with the company to make it more agile and efficient. Use of modern technologies such as Angular, Node.js, TypeScript, SQL, MongoDB, Python, and .NET, integrated with AWS services (Lambda, S3)."
+                ],
+                "dateText": "10/2021 – Currently"
+            }
+        ]
+    },
+    "es": {
+        "experiences": [
+            {
+                "title": "Desarrollador de Sofware",
+                "subtitle": "TECNNOVA JED",
+                "workType": "Tiempo completo",
+                "workDescription": [
+                    "Creacion de aplicativo de escritorio de Ordenes de Servicio(Java, Sql Server)."
+                ],
+                "dateText": "02/2020 – 12/2020"
+            },
+            {
+                "title": "Desarrollador WEB",
+                "subtitle": "SYSCOLEGIOS",
+                "workType": "Tiempo completo",
+                "workDescription": [
+                    "Desarrollo y soporte en sistemas de información web (PHP, SQL, JQUERY, HTML)."
+                ],
+                "dateText": "02/2020 – 12/2020"
+            },
+            {
+                "title": "Analista de Desarrollo Full Stack",
+                "subtitle": "KONECTA",
+                "workType": "Tiempo completo",
+                "workDescription": [
+                    "Desarrollo y soporte de aplicativo web de gestión de clientes (React, Yii2, Laravel, SQL, Reporting, security, etc.)."
+                ],
+                "dateText": "03/2021 – 07/2024"
+            },
+            {
+                "title": "Desarrollador Full Stack",
+                "subtitle": "FINAKTIVA",
+                "workType": "Full-time",
+                "workDescription": [
+                    "Desarrollo y mantenimiento de plataforma web fintech, optimizando la interacción del cliente con la empresa para hacerla más ágil y eficiente. Uso de tecnologías modernas como Angular, Node.js, TypeScript, SQL, MongoDB, Python y .NET, integradas con servicios AWS (Lambdas, S3)."
+                ],
+                "dateText": "10/2021 – Actualmente"
+            }
+        ]
+    }
 }
-

@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import { Container } from 'react-bootstrap';
 import Header from './Header';
+import AppContext from '../AppContext';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -21,6 +22,7 @@ const styles = {
 
 function Skills(props) {
 	const { header } = props;
+	const { language } = useContext(AppContext);
 	const [data, setData] = useState(null);
 
 	const renderSkillsIntro = (intro) => (
@@ -34,9 +36,9 @@ function Skills(props) {
 			method: 'GET',
 		})
 			.then((res) => res.json())
-			.then((res) => setData(res))
+			.then((res) => setData(res[language.value] || res.en))
 			.catch((err) => err);
-	}, []);
+	}, [language.value]);
 
 	return (
 		<>
@@ -51,10 +53,7 @@ function Skills(props) {
 									<br />
 									<h3>{rows.title}</h3>
 									{rows.items.map((item) => (
-										<div
-											key={item.title}
-											style={{ display: 'inline-block' }}
-										>
+										<div key={item.title} style={{ display: 'inline-block' }}>
 											<img
 												style={styles.iconStyle}
 												src={item.icon}

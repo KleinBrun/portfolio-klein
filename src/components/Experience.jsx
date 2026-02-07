@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
+import AppContext from '../AppContext';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import { Container } from 'react-bootstrap';
 import ReactMarkdown from 'react-markdown';
@@ -32,6 +33,7 @@ const styles = {
 
 function Experience(props) {
 	const theme = useContext(ThemeContext);
+	const { language } = useContext(AppContext);
 	const { header } = props;
 	const [data, setData] = useState(null);
 
@@ -40,9 +42,12 @@ function Experience(props) {
 			method: 'GET',
 		})
 			.then((res) => res.json())
-			.then((res) => setData(res.experiences))
+			.then((res) => {
+				const langData = res[language.value] || res.en;
+				setData(langData.experiences);
+			})
 			.catch((err) => err);
-	}, []);
+	}, [language.value]);
 
 	return (
 		<>
@@ -65,14 +70,8 @@ function Experience(props) {
 											color: theme.color,
 										}}
 									>
-										<h2 className='item-title'>
-											{item.title}
-										</h2>
-										<div
-											style={
-												styles.subtitleContainerStyle
-											}
-										>
+										<h2 className='item-title'>{item.title}</h2>
+										<div style={styles.subtitleContainerStyle}>
 											<h4
 												style={{
 													...styles.subtitleStyle,
@@ -88,21 +87,19 @@ function Experience(props) {
 											)}
 										</div>
 										<ul style={styles.ulStyle}>
-											{item.workDescription.map(
-												(point) => (
-													<div key={point}>
-														<li>
-															<ReactMarkdown
-																children={point}
-																components={{
-																	p: 'span',
-																}}
-															/>
-														</li>
-														<br />
-													</div>
-												)
-											)}
+											{item.workDescription.map((point) => (
+												<div key={point}>
+													<li>
+														<ReactMarkdown
+															children={point}
+															components={{
+																p: 'span',
+															}}
+														/>
+													</li>
+													<br />
+												</div>
+											))}
 										</ul>
 									</TimelineItem>
 								</Fade>

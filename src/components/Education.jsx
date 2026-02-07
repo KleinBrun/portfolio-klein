@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
+import AppContext from '../AppContext';
 import { Chrono } from 'react-chrono';
 import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
@@ -11,6 +12,7 @@ import '../css/education.css';
 
 function Education(props) {
 	const theme = useContext(ThemeContext);
+	const { language } = useContext(AppContext);
 	const { header } = props;
 	const [data, setData] = useState(null);
 	const [width, setWidth] = useState('50vw');
@@ -21,7 +23,7 @@ function Education(props) {
 			method: 'GET',
 		})
 			.then((res) => res.json())
-			.then((res) => setData(res))
+			.then((res) => setData(res[language.value] || res.en))
 			.catch((err) => err);
 
 		if (window?.innerWidth < 576) {
@@ -37,17 +39,14 @@ function Education(props) {
 		} else {
 			setWidth('50vw');
 		}
-	}, []);
+	}, [language.value]);
 
 	return (
 		<>
 			<Header title={header} />
 			{data ? (
 				<Fade>
-					<div
-						style={{ width }}
-						className='section-content-container'
-					>
+					<div style={{ width }} className='section-content-container'>
 						<Container>
 							<Chrono
 								hideControls
@@ -60,8 +59,7 @@ function Education(props) {
 									primary: theme.accentColor,
 									secondary: theme.accentColor,
 									cardBgColor: theme.chronoTheme.cardBgColor,
-									cardForeColor:
-										theme.chronoTheme.cardForeColor,
+									cardForeColor: theme.chronoTheme.cardForeColor,
 									titleColor: theme.chronoTheme.titleColor,
 								}}
 							>
@@ -73,7 +71,7 @@ function Education(props) {
 												src={education.icon.src}
 												alt={education.icon.alt}
 											/>
-										) : null
+										) : null,
 									)}
 								</div>
 							</Chrono>

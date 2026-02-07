@@ -1,29 +1,60 @@
 {
-    "sections": [
-        {
-            "component": "About",
-            "path": "/about",
-            "headerTitle": "About"
-        },
-        {
-            "component": "Skills",
-            "path": "/skills",
-            "headerTitle": "Skills"
-        },
-        {
-            "component": "Education",
-            "path": "/education",
-            "headerTitle": "Education"
-        },
-        {
-            "component": "Experience",
-            "path": "/experience",
-            "headerTitle": "Experience"
-        },
-        {
-            "component": "Projects",
-            "path": "/projects",
-            "headerTitle": "Projects"
-        }
-    ]
+    "en": {
+        "sections": [
+            {
+                "component": "About",
+                "path": "/about",
+                "headerTitle": "About"
+            },
+            {
+                "component": "Skills",
+                "path": "/skills",
+                "headerTitle": "Skills"
+            },
+            {
+                "component": "Education",
+                "path": "/education",
+                "headerTitle": "Education"
+            },
+            {
+                "component": "Experience",
+                "path": "/experience",
+                "headerTitle": "Experience"
+            },
+            {
+                "component": "Projects",
+                "path": "/projects",
+                "headerTitle": "Projects"
+            }
+        ]
+    },
+    "es": {
+        "sections": [
+            {
+                "component": "About",
+                "path": "/about",
+                "headerTitle": "Sobre mí"
+            },
+            {
+                "component": "Skills",
+                "path": "/skills",
+                "headerTitle": "Habilidades"
+            },
+            {
+                "component": "Education",
+                "path": "/education",
+                "headerTitle": "Educación"
+            },
+            {
+                "component": "Experience",
+                "path": "/experience",
+                "headerTitle": "Experiencia"
+            },
+            {
+                "component": "Projects",
+                "path": "/projects",
+                "headerTitle": "Proyectos"
+            }
+        ]
+    }
 }

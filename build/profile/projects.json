@@ -1,39 +1,82 @@
 {
-    "projects": [
-        {
-            "image": "images/projects/lobby.png",
-            "title": "Hoteleria",
-            "bodyText": "- Sitio web de gestion y reserva de hoteles\n- Crud de contendio hotelera y reservas en BD",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/KleinBrun/Lobby"
-                }
-            ],
-            "tags": [
-                "Vue",
-                "Laravel",
-                "MySql"
-            ]
-        },
-                {
-            "image": "images/projects/million.png",
-            "title": "Gestion De Propiedades",
-            "bodyText": "- Plataforma completa para la gestión de propiedades inmobiliarias",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/KleinBrun/Million-Test"
-                }
-            ],
-            "tags": [
-                ".NET 9",
-                "MongoDB",
-                "Next.js 15",
-                "Tailwind CSS",
-                "Zustand",
-                "Docker"
-            ]
-        }
-    ]
+    "en": {
+        "showMore": "Show more",
+        "projects": [
+            {
+                "image": "images/projects/lobby.png",
+                "title": "Hotel Management",
+                "bodyText": "- Web platform for hotel management and booking\n- CRUD system for hotel content and reservation database management",
+                "links": [
+                    {
+                        "text": "GitHub",
+                        "href": "https://github.com/KleinBrun/Lobby"
+                    }
+                ],
+                "tags": [
+                    "Vue",
+                    "Laravel",
+                    "MySQL"
+                ]
+            },
+            {
+                "image": "images/projects/million.png",
+                "title": "Property Management System",
+                "bodyText": "- Full platform for real estate property management",
+                "links": [
+                    {
+                        "text": "GitHub",
+                        "href": "https://github.com/KleinBrun/Million-Test"
+                    }
+                ],
+                "tags": [
+                    ".NET 9",
+                    "MongoDB",
+                    "Next.js 15",
+                    "Tailwind CSS",
+                    "Zustand",
+                    "Docker"
+                ]
+            }
+        ]
+    },
+    "es": {
+        "showMore": "Ver más",
+        "projects": [
+            {
+                "image": "images/projects/lobby.png",
+                "title": "Hoteleria",
+                "bodyText": "- Sitio web de gestion y reserva de hoteles\n- Crud de contendio hotelera y reservas en BD",
+                "links": [
+                    {
+                        "text": "GitHub",
+                        "href": "https://github.com/KleinBrun/Lobby"
+                    }
+                ],
+                "tags": [
+                    "Vue",
+                    "Laravel",
+                    "MySql"
+                ]
+            },
+            {
+                "image": "images/projects/million.png",
+                "title": "Gestion De Propiedades",
+                "bodyText": "- Plataforma completa para la gestión de propiedades inmobiliarias",
+                "links": [
+                    {
+                        "text": "GitHub",
+                        "href": "https://github.com/KleinBrun/Million-Test"
+                    }
+                ],
+                "tags": [
+                    ".NET 9",
+                    "MongoDB",
+                    "Next.js 15",
+                    "Tailwind CSS",
+                    "Zustand",
+                    "Docker"
+                ]
+            }
+        ]
+    }
 }

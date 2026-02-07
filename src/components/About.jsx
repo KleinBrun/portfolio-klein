@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import Header from './Header';
+import AppContext from '../AppContext';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
@@ -15,7 +16,6 @@ const styles = {
 		textAlign: 'left',
 		fontSize: '1.2em',
 		fontWeight: 500,
-
 	},
 	introImageContainer: {
 		margin: 10,
@@ -27,6 +27,7 @@ const styles = {
 
 function About(props) {
 	const { header } = props;
+	const { language } = useContext(AppContext);
 	const [data, setData] = useState(null);
 
 	const parseIntro = (text) => <ReactMarkdown children={text} />;
@@ -36,15 +37,15 @@ function About(props) {
 			method: 'GET',
 		})
 			.then((res) => res.json())
-			.then((res) => setData(res))
+			.then((res) => setData(res[language.value] || res.en))
 			.catch((err) => err);
-	}, []);
+	}, [language.value]);
 
 	return (
 		<>
 			<Header title={header} />
 			<div className='section-content-container'>
-				<Container >
+				<Container>
 					{data ? (
 						<Fade>
 							<Row>
@@ -52,10 +53,7 @@ function About(props) {
 									{parseIntro(data.about)}
 								</Col>
 								<Col style={styles.introImageContainer}>
-									<img
-										src={data?.imageSource}
-										alt='profile'
-									/>
+									<img src={data?.imageSource} alt='profile' />
 								</Col>
 							</Row>
 						</Fade>
